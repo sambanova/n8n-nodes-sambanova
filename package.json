@@ -1,19 +1,24 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-sambanova",
   "version": "0.1.0",
-  "description": "",
+  "description": "External n8n node to use SambaNova's chat model via their API",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n",
+    "n8n-community-node-package",
+    "sambanova",
+    "ai",
+    "llm",
+    "langchain"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/sambanova/n8n-nodes-sambanova",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Jorge Piedrahita",
+    "email": "jorge.piedrahita@sambanovasystems.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/sambanova/n8n-nodes-sambanova.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,12 +38,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/SambaNovaApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/ChatModelSambaNova/ChatModelSambaNova.node.js"
     ]
   },
   "devDependencies": {
@@ -50,6 +53,7 @@
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
+    "@langchain/openai": "*",
     "n8n-workflow": "*"
   }
 }
