@@ -7,7 +7,7 @@ import {
 
 export class SambaNovaApi implements ICredentialType {
 	name = 'sambanovaApi';
-	displayName = 'SambaNova';
+	displayName = 'SambaNova API';
 
 	documentationUrl = 'https://cloud.sambanova.ai/?utm_source=n8n&utm_medium=external&utm_campaign=cloud_signup';
 

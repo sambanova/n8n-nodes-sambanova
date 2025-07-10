@@ -11,7 +11,7 @@ import { ChatOpenAI } from '@langchain/openai';
 export class ChatModelSambaNova implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'SambaNova Chat Model',
-		name: 'ChatModelSambaNova',
+		name: 'chatModelSambaNova',
 		icon: 'file:sambanova.svg',
 		group: ['transform'],
 		version: 1,
@@ -98,7 +98,8 @@ export class ChatModelSambaNova implements INodeType {
 				},
 				description:
 					'The model which will generate the completion. <a href="https://docs.sambanova.ai/cloud/docs/get-started/supported-models">Learn more</a>.',
-				default: 'DeepSeek-V3-0324',
+					// eslint-disable-next-line n8n-nodes-base/node-param-default-wrong-for-options
+					default: 'DeepSeek-V3-0324',
 			},
 			{
 				displayName: 'Options',
