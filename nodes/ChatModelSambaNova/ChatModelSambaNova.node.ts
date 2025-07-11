@@ -47,13 +47,6 @@ export class ChatModelSambaNova implements INodeType {
 		},
 		properties: [
 			{
-				displayName: 'Connection Hint',
-				name: 'connectionHint',
-				type: 'notice',
-				default: '',
-				description: 'This node is used to connect a SambaNova model into an AI workflow. It outputs a language model object that can be passed into other nodes like AI chains or Agents.',
-			},
-			{
 				displayName: 'Model',
 				name: 'model',
 				type: 'options',
