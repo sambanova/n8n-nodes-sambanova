@@ -1,5 +1,5 @@
 import {
-	NodeConnectionTypes,
+	NodeConnectionType,
 	type INodeType,
 	type INodeTypeDescription,
 	type ISupplyDataFunctions,
@@ -34,7 +34,7 @@ export class ChatModelSambaNova implements INodeType {
 			},
 		},
 		inputs: [],
-		outputs: [NodeConnectionTypes.AiLanguageModel],
+		outputs: [NodeConnectionType.AiLanguageModel],
 		outputNames: ['Model'],
 		credentials: [
 			{
