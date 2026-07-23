@@ -1,0 +1,5 @@
+# Gitleaks config for n8n-nodes-sambanova. Extends the built-in default ruleset.
+title = "n8n-nodes-sambanova gitleaks config"
+
+[extend]
+useDefault = true
